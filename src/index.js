@@ -1,4 +1,4 @@
-import { createTheme, ThemeProvider, Typography } from '@mui/material';
+import { createTheme, ThemeProvider} from '@mui/material';
 import ReactDOM from 'react-dom';
 import App from './App';
 
