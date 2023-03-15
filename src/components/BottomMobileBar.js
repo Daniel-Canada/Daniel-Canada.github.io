@@ -1,12 +1,13 @@
 import { AppBar, IconButton, Toolbar } from '@mui/material'
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { buttons } from '../data/buttons'
 
 function BottomMobileBar() {
 
 
   const mobileButtons = buttons.map((button, index)=>{
-    return <IconButton key={index}>{button.icon}</IconButton>
+    return <NavLink to={button.path}><IconButton key={index}>{button.icon}</IconButton></NavLink>
   });
 
   return (

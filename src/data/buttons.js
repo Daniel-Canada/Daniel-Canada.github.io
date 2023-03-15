@@ -8,23 +8,28 @@ const styling = {color: "#000"}
 export const buttons = [
   {
     label: "Home",
-    icon:  <CottageOutlined sx={styling}></CottageOutlined>
+    icon:  <CottageOutlined sx={styling}></CottageOutlined>,
+    path: "/"
   },
   {
     label: "Projects",
-    icon:  <LibraryBooksOutlined sx={styling}></LibraryBooksOutlined>
+    icon:  <LibraryBooksOutlined sx={styling}></LibraryBooksOutlined>,
+    path: "projects"
   },
   {
     label: "Contacts",
-    icon:  <MailOutline sx={styling}></MailOutline>
+    icon:  <MailOutline sx={styling}></MailOutline>,
+    path: "contact"
   },
   {
     label: "Bookmarks",
-    icon:  <BookmarkBorderOutlined sx={styling}></BookmarkBorderOutlined>
+    icon:  <BookmarkBorderOutlined sx={styling}></BookmarkBorderOutlined>,
+    path: "bookmark"
   },
   {
     label: "Info",
-    icon:  <InfoOutlined sx={styling}></InfoOutlined>
+    icon:  <InfoOutlined sx={styling}></InfoOutlined>,
+    path: "info"
   }
 ];
 

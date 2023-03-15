@@ -1,15 +1,16 @@
 import { Drawer, List } from '@mui/material'
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { buttons } from '../data/buttons';
 import ListItemMenu from './ListItemMenu';
 import ListItemTitleIcon from './ListItemTitleIcon'
 
 function MenuLeftDrawer() {
   const buttonsMap = buttons.map((button, index)=>{
-    return <ListItemMenu
+    return <NavLink style={{ textDecoration: 'none' , color: "#000"}} to={button.path}><ListItemMenu
       label = {button.label}  buttonComponent = {button.icon} key={index}
     >
-    </ListItemMenu>
+    </ListItemMenu></NavLink> 
   });
   return (
   <Drawer sx={{display: {xs: "none", sm: "flex"}}} variant='permanent'>
