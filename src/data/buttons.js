@@ -37,12 +37,14 @@ export const socials = [
   {
     label: "Linkedin",
     icon: <Avatar sx={{bgcolor:blue[700]}}><LinkedIn sx={{bgcolor: blue[700]}}></LinkedIn></Avatar>,
-    name: "Daniel T."
+    name: "Daniel T.",
+    link: "https://www.linkedin.com/in/daniel-t-8695a2105/"
   },
   {
     label: "GitHub",
     icon: <Avatar sx={{bgcolor: deepPurple[700]}}><GitHub sx={{bgcolor: deepPurple[700]}}></GitHub></Avatar>,
-    name: "Daniel-Canada"
+    name: "Daniel-Canada",
+    link: "https://github.com/Daniel-Canada"
   }
  
 ]

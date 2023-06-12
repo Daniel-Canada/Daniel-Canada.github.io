@@ -1,8 +1,15 @@
+import { Typography } from '@mui/material'
 import React from 'react'
 
 function BookmarkPage() {
+  // When 
   return (
-    <div>BookmarkPage</div>
+    <div>
+      <Typography>
+        No Bookmark Yet
+      </Typography>
+
+    </div>
   )
 }
 

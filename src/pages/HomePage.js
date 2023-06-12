@@ -7,7 +7,8 @@ function HomePage() {
     <div>
       <PostCard
         user = "Daniel T."
-        content = "Velit fugiat veniam non irure in nisi. Anim labore tempor non cillum adipisicing duis sunt dolor. Culpa ullamco et elit fugiat consectetur veniam adipisicing non. Elit proident irure amet reprehenderit excepteur ullamco voluptate id in eu pariatur ex reprehenderit. Id amet irure eiusmod eu."
+        content = "  Hi, I'm Daniel. I'm a software developer with a passion for learning and creating. I studied at Concordia University in Montreal, Quebec, Canada. I have a Bachelor's degree in Computer Science. I'm currently working as a software developer at a company called Mouvement Desjardins. I'm always looking for new opportunities to learn and grow as a developer. "
+        image = "IMG_1200.JPG"
       >
       </PostCard>
       <Box height="56px">

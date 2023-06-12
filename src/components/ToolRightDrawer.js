@@ -7,7 +7,7 @@ function ToolRightDrawer() {
 
 
   const socialMap = socials.map((social, index)=>{
-    return <ListItemSocial label={social.label} key={index} icon={social.icon} sublabel={social.name}></ListItemSocial>
+    return <ListItemSocial label={social.label} key={index} link={social.link} icon={social.icon} sublabel={social.name}></ListItemSocial>
   });
 
   return (
@@ -21,7 +21,7 @@ function ToolRightDrawer() {
         {socialMap}
       
         <ListItem>
-            <ListItemText sx={{maxWidth: "251.938px"}} primary="Lorem Lorem veniam est irure magna do ullamco consectetur exercitation. In et voluptate amet dolore ea. Commodo qui est enim id officia anim occaecat. Nostrud culpa aute qui voluptate labore labore. Labore tempor proident dolor id dolor ut anim cillum. Anim enim elit sit occaecat in nostrud amet aute aliquip aute ipsum enim dolor ad. Occaecat ullamco dolore cillum elit proident cupidatat nostrud et dolore consequat exercitation.">
+            <ListItemText sx={{maxWidth: "251.938px"}} primary="">
 
             </ListItemText>
         </ListItem>

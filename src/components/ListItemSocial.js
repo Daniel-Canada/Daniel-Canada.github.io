@@ -2,7 +2,12 @@ import { ListItem, ListItemAvatar, ListItemButton, ListItemText, Typography } fr
 import { blue } from '@mui/material/colors'
 import React from 'react'
 
-function ListItemSocial({label, icon, sublabel}) {
+function ListItemSocial({label, icon, sublabel, link}) {
+
+  function redirect(){
+    window.location.href = link;
+  }
+
   return (
     <ListItem>
       {/* Avatar */}
@@ -15,7 +20,7 @@ function ListItemSocial({label, icon, sublabel}) {
 
 
       {/* Click Button  */}
-      <ListItemButton sx={{justifyContent: "flex-end"}}>
+      <ListItemButton sx={{justifyContent: "flex-end"}} onClick={redirect}>
         <Typography color={blue[500]}>Go</Typography>
       </ListItemButton>
 

@@ -4,7 +4,23 @@ import { deepOrange } from '@mui/material/colors'
 import React from 'react'
 import PostContent from './PostContent'
 
-function PostCard({user, content}) {
+function PostCard({user, content, image}) {
+
+ // State to add the component to a bookmark state when clicked
+  const [bookmark, setBookmark] = React.useState(false)
+
+  // Function to toggle the bookmark state
+  function toggleBookmark(){
+    setBookmark(!bookmark)
+  }
+
+
+
+
+
+
+
+
   return (
     <div>
       <Card sx={{minWidth: "358px", maxWidth: "468px"}}>
@@ -17,7 +33,7 @@ function PostCard({user, content}) {
         </CardHeader>
         <CardMedia
           component="img"
-          image="IMG_1200.JPG"
+          image={image}
           height="618px"
         >
         </CardMedia>
@@ -26,7 +42,10 @@ function PostCard({user, content}) {
             <FavoriteBorderOutlined></FavoriteBorderOutlined>
           </IconButton>
           <IconButton>
-           <BookmarkBorder></BookmarkBorder>
+           <BookmarkBorder
+            onClick={toggleBookmark}
+
+           ></BookmarkBorder>
           </IconButton>
         </CardActions>
         

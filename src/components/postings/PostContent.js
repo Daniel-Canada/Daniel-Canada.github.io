@@ -14,6 +14,7 @@ function PostContent({user, content}) {
       <Typography
         display="inline"
         variant='body2' 
+        align='justify'
       >
         {content}
       </Typography>
